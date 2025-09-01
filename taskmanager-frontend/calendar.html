@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Calendar</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <!-- <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet"> -->
+  <!-- <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet"> -->
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- calendar css links -->
+  <link rel="shortcut icon" href="assets1/images/favicon.ico" />
+      
+      <link rel="stylesheet" href="assets1/css/backend-plugin.min.css">
+      <link rel="stylesheet" href="assets1/css/backend.css?v=1.0.1">
+      <link rel="stylesheet" href="assets1/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+      <link rel="stylesheet" href="assets1/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
+      <link rel="stylesheet" href="assets1/vendor/remixicon/fonts/remixicon.css">    
+    <link rel='stylesheet' href='assets1/vendor/fullcalendar/core/main.css' />
+    <link rel='stylesheet' href='assets1/vendor/fullcalendar/daygrid/main.css' />
+    <link rel='stylesheet' href='assets1/vendor/fullcalendar/timegrid/main.css' />
+    <link rel='stylesheet' href='assets1/vendor/fullcalendar/list/main.css' />
+    <style>
+    #calendar {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">TaskManager</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">4</span>
+          </a><!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 4 new notifications
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Lorem Ipsum</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Atque rerum nesciunt</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>1 hr. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Sit rerum fuga</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>2 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-info-circle text-primary"></i>
+              <div>
+                <h4>Dicta reprehenderit</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>4 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show all notifications</a>
+            </li>
+
+          </ul><!-- End Notification Dropdown Items -->
+
+        </li><!-- End Notification Nav -->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+            <span class="badge bg-success badge-number">3</span>
+          </a><!-- End Messages Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              You have 3 new messages
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Maria Hudson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Anna Nelson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>6 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>David Muldon</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>8 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="dropdown-footer">
+              <a href="#">Show all messages</a>
+            </li>
+
+          </ul><!-- End Messages Dropdown Items -->
+
+        </li><!-- End Messages Nav -->
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2" id="userName">User</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Kevin Anderson</h6>
+              <span>Web Designer</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="userProfile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="userProfile.html">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                <i class="bi bi-question-circle"></i>
+                <span>Need Help?</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link " data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-journal-text"></i><span>Tasks</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="addNewTask.html">
+              <i class="bi bi-circle"></i><span>Add New Task</span>
+            </a>
+          </li>
+          <li>
+            <a href="manageTasks.html">
+              <i class="bi bi-circle"></i><span>Manage Tasks</span>
+            </a>
+          </li>
+          <li>
+            <a href="calendar.html" class="active">
+              <i class="bi bi-circle"></i><span>Calendar</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Forms Nav -->
+
+      <li class="nav-heading">Pages</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="loginPage.html">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>Login</span>
+        </a>
+      </li><!-- End Login Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="userProfile.html">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
+      <!-- <li class="nav-item">
+        <a class="nav-link " href="taskDetails.html">
+          <i class="bi bi-file-earmark"></i>
+          <span>Task Info</span>
+        </a>
+      </li> -->
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="container mt-4 text-center">
+      <h2>Task Calendar</h2>
+      <div id="calendar"></div>
+    </div>
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+<!-- Backend Bundle JavaScript -->
+<script src="assets1/js/backend-bundle.min.js"></script>
+
+<!-- Chart Custom JavaScript -->
+<script src="assets1/js/customizer.js"></script>
+
+<!-- Fullcalender Javascript -->
+<script src='assets1/vendor/fullcalendar/core/main.js'></script>
+<script src='assets1/vendor/fullcalendar/daygrid/main.js'></script>
+<script src='assets1/vendor/fullcalendar/timegrid/main.js'></script>
+<script src='assets1/vendor/fullcalendar/list/main.js'></script>
+<script src='assets1/vendor/fullcalendar/interaction/main.js'></script>
+
+<!-- app JavaScript -->
+<script src="assets1/js/app.js"></script>  
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <!-- <script src="assets/vendor/quill/quill.js"></script> -->
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <!-- <script src="assets/vendor/tinymce/tinymce.min.js"></script> -->
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <!-- <script src="assets/js/main.js"></script> -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+
+  <!-- FullCalendar -->
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+
+  <script src="config.js"></script>
+  <script>
+    const token = localStorage.getItem("token");
+    if (!token) {
+      window.location.href = "loginPage.html";
+    }
+
+    document.addEventListener("DOMContentLoaded", async function () {
+      const calendarEl = document.getElementById("calendar");
+      const today = new Date();
+      const futureLimit = new Date();
+      futureLimit.setDate(today.getDate() + 30); // recurring events for next 30 days
+
+      try {
+        const res = await fetch(`${API_BASE_URL}/tasks`, {
+          headers: { Authorization: `Bearer ${token}` },
+        });
+
+        if (!res.ok) {
+          throw new Error(await res.text());
+        }
+
+        const tasks = await res.json(); // backend should return all user tasks
+        const events = [];
+
+        tasks.forEach((task) => {
+          if (task.recurringEvent) {
+            let date = new Date(today);
+            while (date <= futureLimit) {
+              events.push({
+                title: task.title || "Unnamed Task",
+                start: date.toISOString().split("T")[0],
+                url: `taskDetails.html?id=${task._id || task.id}`,
+                color: "#0d6efd",
+              });
+              date.setDate(date.getDate() + 1);
+            }
+          } else if (task.dueDate) {
+            events.push({
+              title: task.title || "Unnamed Task",
+              start: task.dueDate,
+              url: `taskDetails.html?id=${task._id || task.id}`,
+              color: task.status === "Completed" ? "#28a745" :
+                    task.status === "In Progress" ? "#ffc107" : "#dc3545"
+            });
+          }
+        });
+
+        const calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: "dayGridMonth",
+          height: "auto",
+          events: events,
+          eventClick: function (info) {
+            if (info.event.url) {
+              window.open(info.event.url, "_self");
+              info.jsEvent.preventDefault();
+            }
+          }
+        });
+
+        calendar.render();
+
+      } catch (err) {
+        console.error("❌ Error fetching tasks for calendar:", err);
+        alert("Failed to load calendar tasks. Please try again.");
+      }
+    });
+
+    // Display logged-in user name
+    const userNameEl = document.getElementById("userName");
+    if (token && userNameEl) {
+      // Optionally, store user name during login
+      const name = localStorage.getItem("userName") || "User";
+      userNameEl.textContent = name;
+    }
+  </script>
+
+
+
+
+  <!-- <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAU3gX7YZe-hGJ8fB0k0FDq_2b8gplrPFs",
+      authDomain: "taskmanager-98f33.firebaseapp.com",
+      projectId: "taskmanager-98f33",
+      storageBucket: "taskmanager-98f33.appspot.com",
+      messagingSenderId: "491732499247",
+      appId: "1:491732499247:web:8998d1f6e1a57de1fdffda"
+    };
+  
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    const auth = firebase.auth();
+  
+    document.addEventListener("DOMContentLoaded", function () {
+      const calendarEl = document.getElementById("calendar");
+      const today = new Date();
+      const futureLimit = new Date();
+      futureLimit.setDate(today.getDate() + 30); // generate recurring for 30 days ahead
+  
+      auth.onAuthStateChanged(async (user) => {
+        if (!user) {
+          window.location.href = "login.html"; // redirect if not logged in
+          return;
+        }
+  
+        const uid = user.uid;
+        const events = [];
+  
+        try {
+          const taskSnapshot = await db.collection("users").doc(uid).collection("tasks").get();
+  
+          taskSnapshot.forEach((doc) => {
+            const task = doc.data();
+  
+            // Recurring task: generate events daily for the next 30 days
+            if (task.recurringEvent === true) {
+              let date = new Date(today);
+              while (date <= futureLimit) {
+                events.push({
+                  title: task.title || "Unnamed Task",
+                  start: date.toISOString().split("T")[0],
+                  url: `taskDetails.html?id=${doc.id}`,
+                  color: "#0d6efd" // blue
+                });
+                date.setDate(date.getDate() + 1);
+              }
+            } else if (task.dueDate) {
+              // Non-recurring task
+              events.push({
+                title: task.title || "Unnamed Task",
+                start: task.dueDate,
+                url: `taskDetails.html?id=${doc.id}`,
+                color: task.status === "Completed" ? "#28a745" :
+                       task.status === "In Progress" ? "#ffc107" : "#dc3545"
+              });
+            }
+          });
+  
+          const calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: "dayGridMonth",
+            height: "auto",
+            events: events,
+            eventClick: function (info) {
+              if (info.event.url) {
+                window.open(info.event.url, "_self");
+                info.jsEvent.preventDefault();
+              }
+            }
+          });
+  
+          calendar.render();
+        } catch (error) {
+          console.error("❌ Error fetching tasks for calendar:", error);
+        }
+      });
+    });
+  </script>
+  
+  <script>
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        // Prefer displayName (for Google sign-in), else fallback to email
+        const name = user.displayName || user.email || "User";
+        document.getElementById("userName").textContent = name;
+      } else {
+        // Optional: Redirect to login if not logged in
+        window.location.href = "loginPage.html";
+      }
+    });
+  </script> -->
+  
+</body>
+
+</html>
+
+
+<!--
+<div class="container">
+  <div class="row">
+      <div class="col-lg-12 mb-4">
+          <div class="py-4 border-bottom">
+              <div class="form-title text-center">
+                  <h3>My Schedule</h3>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-12">
+          <h4 class="mb-3">Choose A Schedule Below</h4>
+          <div class="d-flex flex-wrap align-items-center justify-content-between my-schedule mb-3">
+             <div class="d-flex align-items-center justify-content-between"> 
+                  <div class="form-group mb-0">
+                      <select name="type" class="selectpicker form-control" data-style="py-0">
+                          <option>Working Hours</option>
+                          <option>Default Hours</option>
+                          <option>Working Hours</option>
+                          <option>Learning Hours</option>
+                      </select>
+                  </div>
+                  <div class="select-dropdown input-prepend input-append">
+                      <div class="btn-group">
+                          <label data-toggle="dropdown">
+                          <span class="dropdown-toggle search-query rounded btn bg-white btn-edit"><i class="las la-edit mr-0 text-center"></i></span><span class="search-replace"></span>
+                          <span class="caret">icon</span>
+                          </label>
+                          <ul class="dropdown-menu w-100 border-none p-3">
+                              <li><div class="item mb-2"><i class="ri-pencil-line mr-3"></i>Edit</div></li>
+                              <li><div class="item"><i class="ri-delete-bin-6-line mr-3"></i>Delete</div></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>  
+              <div class="create-workform">
+                  <a href="#" data-toggle="modal" data-target="#date-event" class="btn btn-primary pr-5 position-relative">New Schedule<span class="add-btn"><i class="ri-add-line"></i></span></a>
+              </div>                 
+          </div>
+          <h4 class="mb-3">Set Your weekly hours</h4>
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="card card-block card-stretch">
+                      <div class="card-body">
+                          <div id="calendar1" class="calendar-s"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+Modal 
+<div class="modal fade" id="date-event" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+          <div class="modal-body">
+              <div class="popup text-left">
+                  <h4 class="mb-3">Add Schedule</h4>
+                  <form action="/" id="submit-schedule">
+                      <div class="content create-workform row">
+                          <div class="col-md-12">
+                              <div class="form-group">
+                                  <label class="form-label" for="schedule-title">Schedule For</label>
+                                  <input class="form-control" placeholder="Enter Title" type="text" name="title" id="schedule-title" required />
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label class="form-label" for="schedule-start-date">Start Date</label>
+                                  <input class="form-control" placeholder="2020-06-20" type="date" name="title" id="schedule-start-date" required />
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label class="form-label" for="schedule-end-date">End Date</label>
+                                  <input class="form-control" placeholder="2020-06-20" type="date" name="title" id="schedule-end-date" required />
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                              <div class="form-group">
+                                  <input class="form-control" type="color" name="title" id="schedule-color" required />
+                              </div>
+                          </div>
+                          <div class="col-md-12 mt-4">
+                              <div class="d-flex flex-wrap align-items-ceter justify-content-center">
+                                  <button class="btn btn-primary mr-4" data-dismiss="modal">Cancel</button>
+                                  <button class="btn btn-outline-primary" type="submit" onclick="SubmitEvent()">Save</button>
+                              </div>
+                          </div>  
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>    
+</div>
+</div>
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-content">
+    <div class="modal-body">
+      <div class="popup text-left" id="popup">
+          <h4 class="mb-3">Add Action</h4>
+          <div class="content create-workform">
+              <div class="form-group">
+                <h6 class="form-label mb-3">Copy Your Link</h6>
+                <div class="input-group">
+                  <input type="text" class="form-control" readonly value="calendly.com/rickoshea1234">
+                  <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2"><i class="las la-link"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <h6 class="form-label mb-3">Email Your Link</h6>
+                <div class="input-group">
+                  <input type="text" class="form-control" readonly value="calendly.com/rickoshea1234">
+                  <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon3"><i class="las la-envelope"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <h6 class="form-label mb-3">Add to Your Website</h6>
+                <div class="input-group">
+                  <input type="text" class="form-control" readonly value="calendly.com/rickoshea1234">
+                  <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon4"><i class="las la-code"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 mt-3">
+                  <div class="d-flex flex-wrap align-items-ceter justify-content-center">
+                      <button type="submit" data-dismiss="modal" class="btn btn-primary mr-4">Cancel</button>
+                      <button type="submit" data-dismiss="modal" class="btn btn-outline-primary">Save</button>
+                  </div>
+              </div>  
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+Wrapper End 
+<script>
+  function SubmitEvent() {
+    var schedule_title = document.getElementById("schedule-title").value;
+    var start_date = document.getElementById("schedule-start-date").value;
+    var end_date = document.getElementById("schedule-end-date").value;
+    var event_colour = document.getElementById("schedule-color").value;
+
+    console.log(schedule_title);
+    console.log(start_date);
+    console.log(end_date);
+    console.log(event_colour);
+  }
+</script>-->

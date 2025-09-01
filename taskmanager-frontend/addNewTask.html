@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>New Task</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <!-- <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet"> -->
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Updated: Apr 20 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">TaskManager</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">4</span>
+          </a><!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 4 new notifications
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Lorem Ipsum</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Atque rerum nesciunt</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>1 hr. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Sit rerum fuga</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>2 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-info-circle text-primary"></i>
+              <div>
+                <h4>Dicta reprehenderit</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>4 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show all notifications</a>
+            </li>
+
+          </ul><!-- End Notification Dropdown Items -->
+
+        </li><!-- End Notification Nav -->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+            <span class="badge bg-success badge-number">3</span>
+          </a><!-- End Messages Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              You have 3 new messages
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Maria Hudson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Anna Nelson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>6 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>David Muldon</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>8 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="dropdown-footer">
+              <a href="#">Show all messages</a>
+            </li>
+
+          </ul><!-- End Messages Dropdown Items -->
+
+        </li><!-- End Messages Nav -->
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2" id="userName">User</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Kevin Anderson</h6>
+              <span>Web Designer</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="userProfile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="userProfile.html">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                <i class="bi bi-question-circle"></i>
+                <span>Need Help?</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link " data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-journal-text"></i><span>Tasks</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="addNewTask.html" class="active">
+              <i class="bi bi-circle"></i><span>Add New Task</span>
+            </a>
+          </li>
+          <li>
+            <a href="manageTasks.html">
+              <i class="bi bi-circle"></i><span>Manage Tasks</span>
+            </a>
+          </li>
+          <li>
+            <a href="calendar.html">
+              <i class="bi bi-circle"></i><span>Calendar</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Forms Nav -->
+
+      <li class="nav-heading">Pages</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="loginPage.html">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>Login</span>
+        </a>
+      </li><!-- End Login Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="userProfile.html">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
+      <!-- <li class="nav-item">
+        <a class="nav-link " href="taskDetails.html">
+          <i class="bi bi-file-earmark"></i>
+          <span>Task Info</span>
+        </a>
+      </li> -->
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>New task</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item">Tasks</li>
+          <li class="breadcrumb-item active">Add New Task</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section">
+      <div class="row">
+        <!-- <div class="col-lg-6"> -->
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">New Task</h5>
+
+              <!-- General Form Elements -->
+              <form id="taskForm" class="form">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" name="taskTitle" id="taskTitle" placeholder="name@example.com">
+                  <label for="floatingInput">Task Title</label>
+                </div>
+
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">></span>
+                  <input type="text" class="form-control" placeholder="Add tag" aria-label="Username" aria-describedby="basic-addon1" name="projectTag" id="projectTag">
+                </div>
+
+                <div class="row mb-3">
+                  <label for="inputPassword" class="col-sm-2 col-form-label">Description</label>
+                  <div class="col-sm-10">
+                    <textarea class="form-control" style="height: 100px" name="taskDescription" id="taskDescription"></textarea>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputDate" class="col-sm-2 col-form-label">Due Date</label>
+                  <div class="col-sm-10">
+                    <input type="date" class="form-control" name="taskDueDate" id="taskDueDate">
+                  </div>
+                </div>
+
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">@</span>
+                  <input type="text" class="form-control" placeholder="Collaborator" aria-label="Username" aria-describedby="basic-addon1" name="collaborators" id="collaborators">
+                </div>
+
+                <div class="row mb-3">
+                  <label for="inputNumber" class="col-sm-2 col-form-label">File Upload</label>
+                  <div class="col-sm-10">
+                    <input class="form-control" type="file" name="formFile" id="formFile1">
+                  </div>
+                </div>
+
+                <!-- <div class="row mb-3">
+                  <label for="inputTime" class="col-sm-2 col-form-label">Time</label>
+                  <div class="col-sm-10">
+                    <input type="time" class="form-control" name="timeOfAction" id="timeOfAction">
+                  </div>
+                </div> -->
+
+                <div class="form-check my-4">
+                  <label class="form-check-label" for="recurringEvent">
+                    Recurring Event?
+                  </label>
+                  <input class="form-check-input" type="checkbox" name="recurringEvent" id="recurringEvent">
+                </div>
+
+                
+                <div class="row my-4">
+                  <label>Priority</label>
+                  <input type="range" class="form-range" min="0" max="2" step="1" name="taskPriority" id="taskPriority">
+                </div>
+
+                <div class="row mb-3">
+                  <label for="inputDate" class="col-sm-2 col-form-label">Action Date</label>
+                  <div class="col-sm-10">
+                    <input type="date" class="form-control" name="actionDate" id="actionDate">
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <div class="col-sm-10">
+                    <textarea class="form-control" style="height: 100px" name="actionDescription" id="actionDescription" placeholder="Action"></textarea>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Add Task</button>
+                  </div>
+                </div>
+                <!-- onclick="Submit_Task_details()" -->
+
+              </form><!-- End General Form Elements -->
+
+            </div>
+          </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <!-- <script src="assets/vendor/quill/quill.js"></script> -->
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <!-- <script src="assets/vendor/tinymce/tinymce.min.js"></script> -->
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+
+  <script src="config.js"></script>
+  <script>
+    const token = localStorage.getItem("token");
+    if (!token) {
+      window.location.href = "loginPage.html";
+    }
+
+    document.getElementById("taskForm").addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const taskData = {
+        title: document.getElementById("taskTitle").value,
+        projectTag: document.getElementById("projectTag").value,
+        description: document.getElementById("taskDescription").value,
+        dueDate: document.getElementById("taskDueDate").value,
+        collaborators: document.getElementById("collaborators").value,
+        status: "On Going",
+        recurringEvent: document.getElementById("recurringEvent").checked,
+        taskPriority: document.getElementById("taskPriority").value,
+        actionDate: document.getElementById("actionDate").value,
+        actionDescription: document.getElementById("actionDescription").value
+      };
+
+      try {
+        const res = await fetch(`${API_BASE_URL}/tasks`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`
+          },
+          body: JSON.stringify(taskData)
+        });
+
+        if (!res.ok) {
+          const errMsg = await res.text();
+          throw new Error(errMsg || "Failed to add task");
+        }
+
+        alert("✅ Task added successfully!");
+        document.getElementById("taskForm").reset();
+
+      } catch (err) {
+        console.error("❌ Error adding task:", err);
+        alert("Error saving task: " + err.message);
+      }
+    });
+
+    // Display user name
+    document.addEventListener("DOMContentLoaded", () => {
+      if (token) {
+        fetch(`${API_BASE_URL}/homepage`, {
+          headers: { Authorization: `Bearer ${token}` }
+        }).then(() => {
+          const name = localStorage.getItem("userName") || "User";
+          document.getElementById("userName").textContent = name;
+        });
+      } else {
+        window.location.href = "loginPage.html";
+      }
+    });
+  </script>
+
+
+
+
+  <!-- <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAU3gX7YZe-hGJ8fB0k0FDq_2b8gplrPFs",
+      authDomain: "taskmanager-98f33.firebaseapp.com",
+      projectId: "taskmanager-98f33",
+      storageBucket: "taskmanager-98f33.appspot.com",
+      messagingSenderId: "491732499247",
+      appId: "1:491732499247:web:8998d1f6e1a57de1fdffda"
+    };
+  
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    const auth = firebase.auth();
+  
+    document.getElementById("taskForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+  
+      const title = document.getElementById("taskTitle").value;
+      const projectTag = document.getElementById("projectTag").value;
+      const description = document.getElementById("taskDescription").value;
+      const dueDate = document.getElementById("taskDueDate").value;
+      const collaborators = document.getElementById("collaborators").value;
+      const status = "On Going";
+      const recurringEvent = document.getElementById("recurringEvent").checked;
+      const taskPriority = document.getElementById("taskPriority").value;
+      const actionDate = document.getElementById("actionDate").value;
+      const actionDescription = document.getElementById("actionDescription").value;
+  
+      // ✅ Ensure user is logged in before trying to add task
+      auth.onAuthStateChanged((user) => {
+        if (user) {
+          const uid = user.uid;
+  
+          db.collection("users").doc(uid).collection("tasks").add({
+            title: title,
+            projectTag: projectTag,
+            description: description,
+            dueDate: dueDate,
+            collaborators: collaborators,
+            status: status,
+            recurringEvent: recurringEvent,
+            taskPriority: taskPriority,
+            actionDate: actionDate,
+            actionDescription: actionDescription,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp()
+          }).then(() => {
+            alert("✅ Task added successfully!");
+            document.getElementById("taskForm").reset();
+          }).catch((error) => {
+            console.error("❌ Error adding task: ", error);
+            alert("Error saving task.");
+          });
+  
+        } else {
+          alert("⚠️ User not logged in. Please sign in to add tasks.");
+        }
+      });
+    });
+  </script>
+  <script>
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        // Prefer displayName (for Google sign-in), else fallback to email
+        const name = user.displayName || user.email || "User";
+        document.getElementById("userName").textContent = name;
+      } else {
+        // Optional: Redirect to login if not logged in
+        window.location.href = "loginPage.html";
+      }
+    });
+  </script> -->
+  
+</body>
+
+</html>
+
+
+
+
+<!-- <script>
+
+  function Submit_Task_details(event) {
+      var task_name = document.getElementById("taskname1").value;
+      var project_name = document.getElementById("project_tag1").value;
+      var task_description = document.getElementById("task_description1").value;
+      var due_date = document.getElementById("due_date1").value;
+      var collabs = document.getElementById("collaborators1").value;
+      var action_time = document.getElementById("time_of_action1").value;
+      var priority = document.getElementById("prty1").value;
+      var recurring_event = document.getElementById("priorityrange1").value;
+      var action_date = document.getElementById("action_date1").value;
+      var action = document.getElementById("action1").value;
+
+      var data = {task_name, project_name, task_description, due_date
+        , collabs, action_time, priority, recurring_event, action_date, action
+      }
+
+      SendToServer(data);
+  }
+
+
+
+
+
+    // const formEl = document.querySelector('.form');
+
+    // formEl.addEventListener('submit', (event) => {
+    //   event.preventDefault();
+    //   // console.log("HELLO");
+
+    //   const formData = new FormData(formEl);
+    //   // console.log("Helo");
+    //   // console.log(formData.getElementById('taskname'));
+    //   for(item of formData) {
+    //     console.log(item[0], item[1]);
+    //   }
+    // });
+
+    // fetch('https://jsonplaceholder.typicode.com/users')
+    //   .then(res => {
+    //     return res.json();
+    //   })
+    //   .then(data => {
+    //     data.forEach(user => {
+    //       // const markup = `<tr><td>${user.name}</td><td>${user.contact}</td></tr>`;
+
+    //       // document.querySelector('tbody').insertAdjacentHTML('beforeend', markup);
+    //       console.log(user);
+    //     });
+    //   })
+
+    // function Submit_Task_details(event) {
+    //   var task_name = document.getElementById("taskname").value;
+    //   var project_name = document.getElementById("project_tag").value;
+    //   var task_description = document.getElementById("task_description").value;
+    //   var due_date = document.getElementById("due_date").value;
+    //   var collabs = document.getElementById("collaborators").value;
+    //   var files = document.getElementById("formFile").value;
+    //   var action_time = document.getElementById("time_of_action").value;
+    //   var recurring_event = document.getElementById("prty").value;
+    //   var action_date = document.getElementById("action_date").value;
+    //   var action = document.getElementById("action").value;
+
+    //   if(recurring_event=="on") {
+    //     recurring_event = "recurring";
+    //   }
+    //   else {
+    //     recurring_event = "regular";
+    //   }
+    //   var priority = document.getElementById("priorityrange").value;
+    //   var notes = document.getElementById("add_notes");
+    //   var action_set = {action, action_date};
+
+      // console.log(task_name);
+      // console.log(project_name);
+      // console.log(task_description);
+      // console.log(due_date);
+      // console.log(collabs);
+      // console.log(files);
+      // console.log(action_time);
+      // console.log(recurring_event);
+      // console.log(priority);
+      // console.log(notes);
+      // console.log(action_set);
+
+    // }
+  </script> -->
+
+
+<!-- <script>
+    document.getElementById("taskForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      console.log("Done");
+  
+      // Get values from form fields
+      const title = document.getElementById("taskTitle").value;
+      const description = document.getElementById("taskDescription").value;
+      const dueDate = document.getElementById("taskDueDate").value;
+      const status = document.getElementById("taskStatus").value;
+  
+      // Save to Firestore
+      db.collection("tasks").add({
+        title: title,
+        description: description,
+        dueDate: dueDate,
+        status: status,
+        timestamp: firebase.firestore.FieldValue.serverTimestamp()
+      }).then(() => {
+        alert("Task saved!");
+        document.getElementById("taskForm").reset();
+      }).catch((error) => {
+        console.error("Error adding task: ", error);
+      });
+    });
+  </script>
+  
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAU3gX7YZe-hGJ8fB0k0FDq_2b8gplrPFs",
+      authDomain: "taskmanager-98f33.firebaseapp.com",
+      projectId: "taskmanager-98f33",
+      storageBucket: "taskmanager-98f33.firebasestorage.app",
+      messagingSenderId: "491732499247",
+      appId: "1:491732499247:web:8998d1f6e1a57de1fdffda"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script> -->
